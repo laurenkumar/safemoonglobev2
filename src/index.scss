@@ -2,7 +2,7 @@
 
 // variables
 $background-color: rgba(0, 0, 0, 0.5);
-$body-font-color: #fcdcbf;
+$body-font-color: #c3eeea;
 $body-font-family: Karla, sans-serif;
 $body-font-size: 16px;
 $border-color: #fcdcbf;
@@ -91,13 +91,16 @@ body {
 }
 
 .button {
-  background-color: $container-background-color;
-  border: 1px solid $border-color;
-  border-radius: $spacing * 2;
-  color: $body-font-color;
-  cursor: pointer;
-  padding: $spacing $spacing * 2;
   pointer-events: auto;
+  cursor: pointer;
+  background-color: #222;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 220px;
+  text-align: center;
+  color: $body-font-color;
   &:hover {
     background-color: lighten($container-background-color, 10%);
   }
