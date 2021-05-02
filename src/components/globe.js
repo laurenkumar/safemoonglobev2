@@ -8,8 +8,8 @@ import Fade from './fade';
 import 'tippy.js/dist/tippy.css';
 import 'tippy.js/animations/scale.css';
 
-const MARKER_COLOR = '#fcffbe';
-const MARKER_COMPANION_COLOR = '#fff9e6';
+const MARKER_COLOR = '#44beb5';
+const MARKER_COMPANION_COLOR = '#98d7d1';
 
 function random(scaleFactor) {
   return Math.random() > 0.5
