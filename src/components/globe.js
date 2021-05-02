@@ -89,6 +89,10 @@ function markerRenderer(marker) {
 
 export default function Globe() {
   const [
+    hasGlobeBackgroundTextureLoaded,
+    setHasGlobeBackgroundTextureLoaded,
+  ] = useState(false);
+  const [
     hasGlobeCloudsTextureLoaded,
     setHasGlobeCloudsTextureLoaded,
   ] = useState(false);
@@ -100,6 +104,7 @@ export default function Globe() {
 
   useEffect(() => {
     if (
+      hasGlobeBackgroundTextureLoaded &&
       hasGlobeCloudsTextureLoaded &&
       hasGlobeTextureLoaded
     ) {
@@ -107,11 +112,12 @@ export default function Globe() {
     }
   }, [
     dispatch,
+    hasGlobeBackgroundTextureLoaded,
     hasGlobeCloudsTextureLoaded,
     hasGlobeTextureLoaded,
   ]);
 
-  const { globeCloudsTexture, globeTexture } = config;
+  const { globeBackgroundTexture, globeCloudsTexture, globeTexture } = config;
 
   const isFocusing = focusedMarker;
 
@@ -125,10 +131,9 @@ export default function Globe() {
 
   return (
     <>
-      <div className={hasLoaded ? undefined : 'hidden'} style={{
-    background: 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,132,123,1) 63%, rgba(5,193,166,1) 100%)',
-  }}>
+      <div className={hasLoaded ? undefined : 'hidden'}>
         <ReactGlobe
+          globeBackgroundTexture={globeBackgroundTexture}
           globeCloudsTexture={globeCloudsTexture}
           globeTexture={globeTexture}
           height="100vh"
@@ -140,6 +145,9 @@ export default function Globe() {
             dispatch({ type: 'FOCUS', payload: marker });
           }}
           onGlobeTextureLoaded={() => setHasGlobeTextureLoaded(true)}
+          onGlobeBackgroundTextureLoaded={() =>
+            setHasGlobeBackgroundTextureLoaded(true)
+          }
           onGlobeCloudsTextureLoaded={() =>
             setHasGlobeCloudsTextureLoaded(true)
           }
