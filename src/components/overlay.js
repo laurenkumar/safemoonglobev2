@@ -31,7 +31,6 @@ export default function Overlay() {
             <Link className="nudge-right" onClick={() => setShowAbout(true)}>
               About
             </Link>
-            <Link link="GITHUB_REPO">Github</Link>
           </div>
         </div>
         <div className="content">
