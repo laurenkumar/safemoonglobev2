@@ -4,7 +4,7 @@
  * react-globe: https://github.com/chrisrzhou/react-globe
  */
 export default {
-  keyword: 'safemoon + safemoon price + safemoon news',
+  keyword: 'safemoon',
   globeBackgroundTexture:
     './background.jpg',
   globeCloudsTexture:
