@@ -132,7 +132,7 @@ export default function Globe() {
   return (
     <>
       <div className={hasLoaded ? undefined : 'hidden'} style={{
-    backgroundImage: 'linear-gradient(to right, red , yellow)',
+    filter: 'brightness(0.7)',
   }}>
         <ReactGlobe
           globeBackgroundTexture={globeBackgroundTexture}
