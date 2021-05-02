@@ -12,9 +12,9 @@ export default {
   globeTexture:
     'https://raw.githubusercontent.com/chrisrzhou/react-globe/main/textures/globe_dark.jpg',
   options: {
-    ambientLightColor: '#b34444',
+    ambientLightColor: '#44b394',
     ambientLightIntensity: 1,
-    cameraAutoRotateSpeed: 0.03,
+    cameraAutoRotateSpeed: 0.5,
     cameraRotateSpeed: 0.2,
     enableCameraZoom: false,
     enableDefocus: false,
