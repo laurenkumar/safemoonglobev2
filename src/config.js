@@ -4,7 +4,7 @@
  * react-globe: https://github.com/chrisrzhou/react-globe
  */
 export default {
-  keyword: 'safemoon',
+  keyword: 'safemoon + safemoon price + safemoon news',
   globeBackgroundTexture:
     'https://raw.githubusercontent.com/chrisrzhou/react-globe/main/textures/background.png',
   globeCloudsTexture:
@@ -14,14 +14,14 @@ export default {
   options: {
     ambientLightColor: '#b34444',
     ambientLightIntensity: 1,
-    cameraAutoRotateSpeed: 0.01,
+    cameraAutoRotateSpeed: 0.03,
     cameraRotateSpeed: 0.2,
     enableCameraZoom: false,
     enableDefocus: false,
     focusAnimationDuration: 1000,
     globeCloudsOpacity: 0.1,
-    globeGlowCoefficient: 0.1,
-    globeGlowColor: 'red',
+    globeGlowCoefficient: 0.3,
+    globeGlowColor: 'green',
     globeGlowPower: 5,
     globeGlowRadiusScale: 0.2,
     pointLightIntensity: 3,
