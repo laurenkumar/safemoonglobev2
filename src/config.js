@@ -5,7 +5,8 @@
  */
 export default {
   keyword: 'safemoon + safemoon price + safemoon news',
-  globeBackgroundTexture: './background.jpg',
+  globeBackgroundTexture:
+    './background.jpg',
   globeCloudsTexture:
     './weather.jpg',
   globeTexture:
