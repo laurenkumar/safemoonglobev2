@@ -8,7 +8,7 @@ import Fade from './fade';
 import 'tippy.js/dist/tippy.css';
 import 'tippy.js/animations/scale.css';
 
-const MARKER_COLOR = '#44beb5';
+const MARKER_COLOR = '#98d7d1';
 const MARKER_COMPANION_COLOR = '#98d7d1';
 
 function random(scaleFactor) {
@@ -30,7 +30,7 @@ function markerRenderer(marker) {
   mesh.add(light);
 
   const companions = [];
-  for (let i = 0; i < 250; i++) {
+  for (let i = 0; i < 10; i++) {
     const companionGeometry = new THREE.SphereGeometry(
       Math.min((size * Math.random()) / 2, 1),
       10,
