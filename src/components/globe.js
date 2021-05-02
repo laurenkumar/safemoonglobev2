@@ -135,7 +135,7 @@ export default function Globe() {
     backgroundImage: 'linear-gradient(to right, red , yellow)',
   }}>
         <ReactGlobe
-          globeBackgroundTexture={null}
+          globeBackgroundTexture={globeBackgroundTexture}
           globeCloudsTexture={globeCloudsTexture}
           globeTexture={globeTexture}
           height="100vh"
