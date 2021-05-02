@@ -30,7 +30,7 @@ function markerRenderer(marker) {
   mesh.add(light);
 
   const companions = [];
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 25; i++) {
     const companionGeometry = new THREE.SphereGeometry(
       Math.min((size * Math.random()) / 2, 1),
       10,
