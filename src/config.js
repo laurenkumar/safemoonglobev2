@@ -24,7 +24,7 @@ export default {
     globeGlowColor: 'green',
     globeGlowPower: 5,
     globeGlowRadiusScale: 0.2,
-    pointLightIntensity: 3,
+    pointLightIntensity: 10,
     pointLightPositionRadiusScales: [-1, 1.5, -2.5],
   },
 };
