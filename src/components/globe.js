@@ -147,9 +147,6 @@ export default function Globe() {
             dispatch({ type: 'FOCUS', payload: marker });
           }}
           onGlobeTextureLoaded={() => setHasGlobeTextureLoaded(true)}
-          onGlobeBackgroundTextureLoaded={() =>
-            setHasGlobeBackgroundTextureLoaded(true)
-          }
           onGlobeCloudsTextureLoaded={() =>
             setHasGlobeCloudsTextureLoaded(true)
           }
