@@ -6,11 +6,11 @@
 export default {
   keyword: 'safemoon + safemoon price + safemoon news',
   globeBackgroundTexture:
-    'images/background-blended2.jpg',
+    './background-blended2.jpg',
   globeCloudsTexture:
-    'images/weather.jpg',
+    './weather.jpg',
   globeTexture:
-    'images/earth.jpg',
+    './earth.jpg',
   options: {
     ambientLightColor: '#44b394',
     ambientLightIntensity: 1,
