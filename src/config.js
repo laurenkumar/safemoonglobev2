@@ -12,7 +12,7 @@ export default {
   globeTexture:
     './earth.jpg',
   options: {
-    ambientLightColor: '#44b394',
+    ambientLightColor: '#fff',
     ambientLightIntensity: 1,
     cameraAutoRotateSpeed: 0.5,
     cameraRotateSpeed: 0.2,
