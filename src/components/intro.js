@@ -10,7 +10,7 @@ export default function Intro() {
 
   return (
     <Fade className="intro" show={!start}>
-      <h1>Google Globe Trends</h1>
+      <h1>Safemoon Trending</h1>
       <p>
         <Description />
       </p>
